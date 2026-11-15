@@ -3,9 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>ODIN sign up form</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
+    <div class="container">
+        <img src="odinplant.avif">
+    </div>
+
+    <div class="header-text">
+       	<p>
+    	    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+    		<br>
+    		Sign up now to get started.
+    		<br>
+        </p>
+        <p>
+            You <span>know</span> you want to.
+        </p>
+    </div>
+
+	<form>
+	<legend>Let's do this!</legend>
+
+	<label for="first-name">FIRST NAME</label>
+	<input id="first-name" type="text"/>
+
+	<label for="last-name">LAST NAME</label>
+	<input id="last-name" type="text"/>
+
+	<label for="email">EMAIL</label>
+	<input id="email" type="text" name="email" placeholder="example@gmail.com"/>
+
+	<label for="phone-number">PHONE NUMBER</label>
+	<input id="phone-number" type="text"/>
+
+	<label for="user-password">PASSWORD</label>
+	<input id="password" type="password" name="password"/>
+
+
+	<label for="user-password">CONFIRM PASSWORD</label>
+	<input id="confirm-password" type="password" name="password"/>
+
+	<button type="submit">Create Account</button>
+	</form>
+	<p>Already have an account? <a href="#">Log in</a></p>
 </body>
 </html>
