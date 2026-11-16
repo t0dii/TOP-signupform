@@ -14,7 +14,7 @@
 }
 
 .header-text{
-    font-weight: 100px;
+    font-weight: bold;
     font-size: 20px; 
     padding: 90px;    
 }
@@ -24,9 +24,21 @@ legend{
 }
 
 label{
-    
+    display: block; 
+    font-size: 100%;
+    margin: 0; 
+    box-sizing: border-box; 
+    padding: 10px;
+    height: 30px;
 }
 
 input{ 
-    
+    padding: 5px; 
+}
+
+button{ 
+    text-align: center;
+    display: block; 
+    padding: 10px; 
+    margin: 30px; 
 }
