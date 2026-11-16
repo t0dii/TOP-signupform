@@ -6,6 +6,7 @@
 body{
     display: flex;
 }
+
 .container{
     width: 40%;
     height: 100dvh;
@@ -16,15 +17,80 @@ body{
     width: 100%; 
 }
 
+.container .transparent{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+}
+
 .content{
     width: 60%; 
+    display: flex; 
+    flex-direction: column;
+    gap: 10px; 
+    padding-top: 10vh;
 }
+
+.content p{ 
+    margin: 0px 20px; 
+}
+.content a{
+    color: green; 
+}
+
 .header-text p{
     font-weight: bold;
     font-size: 20px;
-    margin: 10%; 
+    padding: 20px 20px;
+    
 }
 .header-text p > span{
     font-style: italic;
+}
+
+legend{ 
+    font-weight: bold;
+    font-size: 25px; 
+}
+
+fieldset{
+    padding: 10px 30px 0;
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label{
+    display: block; 
+    font-size: 12px; 
+}
+
+input{ 
+    padding: 5px; 
+    box-shadow: inset 1px 1px 3px #cccccc;
+    width: 70%;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap if needed, though we handle stacking with media queries */
+    gap: 10px; /* The space between the columns */
+    margin-bottom: 20px;
+}
+.form-row .form-group {
+    flex: 1; /* Allows each form group to grow and take up equal space */
+    min-width: 100px; /* Prevents columns from getting too squished before stacking */
+    margin-bottom: 0;
+}
+
+button{ 
+    padding: 10px 50px;
+    margin: 30px 20px; 
+    background-color: #596D48;  
+    color: #fff; 
+    border-radius: 8px;  
+    border: none;
 }
 
