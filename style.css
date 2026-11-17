@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+	font-family: Norse;
+	src: url('fonts/Norse.otf') format('woff2');
+	font-weight: normal; 
+	font-style: normal; 
+}
 body{
     display: flex;
 }
@@ -18,12 +23,23 @@ body{
     object-fit: cover;
     width: 100%; 
 }
-
+.transparent{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%; 
+}
+.transparent h1{ 
+    font-family: Norse;
+    font-size: 100px; 
+}
+.transparent img{
+    width: 30%;
+    height: auto; 
+}
 .container .transparent{
     position: absolute;
     top: 22%;
     left: 0;
-    width: 100%;
     display: flex; 
     flex-direction: row;
     align-items: center;
@@ -33,7 +49,6 @@ body{
 .container h1{
     color: #fff;
     gap: 15px; 
-    background: rgba(0, 0, 0, 0.5); 
     padding: 20px 0; 
 }
 
