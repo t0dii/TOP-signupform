@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -20,10 +21,20 @@ body{
 
 .container .transparent{
     position: absolute;
-    top: 0;
+    top: 22%;
     left: 0;
-    width: 20%;
-    height: 20%;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    color: #fff;
+    gap: 15px; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px 0; 
 }
 
 .content{
@@ -70,8 +81,16 @@ label{
 
 input{ 
     padding: 5px; 
-    box-shadow: inset 1px 1px 3px #cccccc;
+    /*box-shadow: inset 1px 1px 3px #cccccc;*/
     width: 70%;
+}
+
+#user-password:user-invalid{
+    border-color: 2px solid red; 
+}
+
+#last-name:focus{ 
+    border-color:blue; 
 }
 
 .form-row {
